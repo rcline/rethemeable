@@ -14,7 +14,7 @@ import themeComponent                       from './themeComponent';
  * Also themeable components have `theme` class attribute which is used to
  * distinguish component styles.
  */
-export default function Themeable(Component, defaultTheme = Component.defaultTheme) {
+export default function themeable(Component, defaultTheme = Component.defaultTheme) {
   let displayName = Component.displayName || Component.name;
   let themeKey = Symbol(displayName);
 
